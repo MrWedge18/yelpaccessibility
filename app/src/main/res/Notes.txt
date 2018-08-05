@@ -1,0 +1,29 @@
+Root: FrameLayout
+    0. FrameLayout
+        0. DrawerLayout
+            0. RelativeLayout
+                0. ImageButton (Menu)
+                1. RecyclerView
+                    0. View
+                    1. RecyclerView
+                        0. RelativeLayout
+                        1. RelativeLayout
+                        2. RelativeLayout
+                        3. RelativeLayout
+                        4. RelativeLayout
+                        5. RelativeLayout
+                        6. RelativeLayout
+                        7. RelativeLayout
+                    2. RelativeLayout
+                        TextView (9)
+                        FrameLayout
+                    3. FrameLayout
+                        0. TextView
+                2. FrameLayout
+                    0. ImageView
+                    1. EditText
+                3. TextView (Nearby)
+                4. TextView (Search)
+                5. TextView (Me)
+                6. TextView (Activity)
+                7. TextView (Bookmarks)
