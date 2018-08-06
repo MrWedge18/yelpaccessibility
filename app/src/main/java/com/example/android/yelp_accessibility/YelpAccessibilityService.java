@@ -104,6 +104,12 @@ public class YelpAccessibilityService extends AccessibilityService {
             Log.d(TAG, "Not Yelp");
             return;
         }
+
+        if(request.equals("back") || request.equals("go back")) {
+            performGlobalAction(GLOBAL_ACTION_BACK);
+            return;
+        }
+
         String[] parts = request.split(" ", 2);
         String command = parts[0].toLowerCase();
         String target = parts[1].toLowerCase();
@@ -113,8 +119,6 @@ public class YelpAccessibilityService extends AccessibilityService {
             clickCommand(target);
         else if(command.equals("scroll"))
             scrollCommand(target);
-        else if(request.equals("back") || request.equals("go back"))
-            performGlobalAction(GLOBAL_ACTION_BACK);
     }
 
     /**
