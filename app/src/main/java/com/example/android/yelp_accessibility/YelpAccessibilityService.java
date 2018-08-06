@@ -40,8 +40,8 @@ public class YelpAccessibilityService extends AccessibilityService {
     protected void onServiceConnected() {
         sr = SpeechRecognizer.createSpeechRecognizer(this);
         sr.setRecognitionListener(new SRListener());
-        //final Intent intent = new Intent(this, FloatingButton.class);
-        //ContextCompat.startForegroundService(this, intent);
+        final Intent intent = new Intent(this, FloatingButton.class);
+        ContextCompat.startForegroundService(this, intent);
         Log.d(TAG, "Service Connected");
     }
 
